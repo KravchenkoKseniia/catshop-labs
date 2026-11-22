@@ -8,6 +8,8 @@ services:
     depends_on:
       db:
         condition: service_healthy
+      partner:
+        condition: service_started
 
   db:
     image: postgres:16-alpine
@@ -21,6 +23,12 @@ services:
       interval: 2s
       timeout: 3s
       retries: 10
+
+  partner:
+    image: wiremock/wiremock:3.6.0
+    volumes:
+      - ./partner/mappings:/home/wiremock/mappings:ro
+
 
 volumes:
   db_data:
