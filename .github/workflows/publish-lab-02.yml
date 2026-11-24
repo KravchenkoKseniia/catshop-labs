@@ -2,9 +2,9 @@ name: publish-lab-02
 
 on:
   push:
-    paths: [ "lab-02/**", "publish-lab-02.yml" ]
+    paths: [ "lab-02/**", ".github/workflows/publish-lab-02.yml"" ]
   pull_request:
-    paths: [ "lab-02/**", "publish-lab-02.yml" ]
+    paths: [ "lab-02/**", ".github/workflows/publish-lab-02.yml" ]
   workflow_dispatch:
 
 jobs:
