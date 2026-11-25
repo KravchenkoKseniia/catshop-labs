@@ -1,0 +1,1 @@
+ghcr.io/kravchenkokseniia/catshop-lab-02@sha256:4aa1880d6e2ed4a2702fc948d3580169d689eadf4cc633856d57e1ae81c1adf2
